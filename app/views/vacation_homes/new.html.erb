@@ -1,0 +1,12 @@
+<form action="/vacation_homes" method="post">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <p>Listing Name:</p>
+  <input type='text' name='vacation_homes[listing_name]'/><br/>
+  <p>City:</p>
+  <input type='text' name='vacation_homes[city]'><br/>
+  <p>State:</p>
+  <input type='text' name='vacation_homes[state]'><br/>
+  <p>Country:</p>
+  <input type='text' name='vacation_homes[country]'><br/><br>
+  <input type='submit'/>
+</form>

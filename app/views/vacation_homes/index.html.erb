@@ -1,5 +1,6 @@
 <h1> Current Vacation Homes</h1>
 
 <% @vacation_homes.each do |home| %>
-  <h3><%= home %></h3>
+  <h3><a href="/vacation_homes/<%= home.id %>"><%= home.listing_name %></a></h3>
+  <p>Location: <%= home.city %>, <%= home.state %>, <%= home.country %></p>
 <% end %>
