@@ -17,4 +17,8 @@ class VacationHomesController < ApplicationController
 
      redirect_to '/vacation_homes'
  end
+
+ def show
+    @vacation_home = VacationHome.find(params[:id])
+ end
 end

@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   get '/vacation_homes', to: 'vacation_homes#index'
   get '/vacation_homes/new', to: 'vacation_homes#new'
   post 'vacation_homes', to: 'vacation_homes#create'
+  get 'vacation_homes/:id', to: 'vacation_homes#show'
 end
