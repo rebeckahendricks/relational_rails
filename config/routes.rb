@@ -3,4 +3,6 @@ Rails.application.routes.draw do
 
   get '/', to: 'welcome#index'
   get '/vacation_homes', to: 'vacation_homes#index'
+  get '/vacation_homes/new', to: 'vacation_homes#new'
+  post 'vacation_homes', to: 'vacation_homes#create'
 end

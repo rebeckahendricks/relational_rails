@@ -1,0 +1,3 @@
+class VacationHome < ApplicationRecord
+  
+end
