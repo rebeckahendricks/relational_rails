@@ -1,6 +1,6 @@
 class VacationHomesController < ApplicationController
   def index
-    @vacation_homes = ['Home 1', 'Home 2', 'Home 3']
+    @vacation_homes = VacationHome.all
   end
 
   def new
